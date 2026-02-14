@@ -1,0 +1,148 @@
+/* WriteExam.css */
+
+/* 1. Layout & Grid for Exam Selection */
+.exam-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.content-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #eef0f2;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.content-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.content-card h3 {
+    margin: 0;
+    color: #1a202c;
+    font-size: 1.25rem;
+}
+
+.content-card p {
+    color: #718096;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* 2. Quiz Interface Container */
+.quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.question-box h3 {
+    color: #4a5568;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 10px;
+}
+
+.question-text {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #2d3748;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* 3. Options Styling */
+.options-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.option-btn {
+    padding: 15px 20px;
+    text-align: left;
+    background: #f7fafc;
+    border: 2px solid #edf2f7;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    color: #4a5568;
+}
+
+.option-btn:hover {
+    background: #edf2f7;
+    border-color: #cbd5e0;
+}
+
+.option-btn.active {
+    background: #ebf8ff;
+    border-color: #3182ce;
+    color: #2b6cb0;
+    font-weight: 600;
+    box-shadow: 0 0 0 1px #3182ce;
+}
+
+/* 4. Navigation Buttons */
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #edf2f7;
+}
+
+button {
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: opacity 0.2s;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.nav-buttons button:first-child {
+    background: #e2e8f0;
+    color: #4a5568;
+}
+
+.nav-buttons button:nth-child(2), 
+.submit-btn,
+.content-card button {
+    background: #3182ce;
+    color: white;
+}
+
+.submit-btn {
+    background: #38a169 !important; /* Green for success/submit */
+}
+
+.submit-btn:hover {
+    background: #2f855a !important;
+}
+
+/* 5. Navbar Timer Highlight */
+.navbar-title {
+    font-family: 'Courier New', Courier, monospace; /* Monospaced for timer */
+    color: #e53e3e; /* Red for urgency */
+    font-weight: bold;
+}

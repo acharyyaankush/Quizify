@@ -1,0 +1,60 @@
+/* ShowResult.css */
+
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+}
+
+.results-table th, .results-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #edf2f7;
+}
+
+.results-table th {
+    background-color: #f8fafc;
+    color: #4a5568;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.results-table tr:hover {
+    background-color: #f7fafc;
+}
+
+/* Status Badges */
+.status-badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.status-badge.pass {
+    background-color: #c6f6d5;
+    color: #2f855a;
+}
+
+.status-badge.fail {
+    background-color: #fed7d7;
+    color: #c53030;
+}
+
+.no-data {
+    text-align: center;
+    padding: 40px;
+}
+
+.no-data button {
+    margin-top: 15px;
+    background-color: #3182ce;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
