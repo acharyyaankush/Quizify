@@ -17,8 +17,6 @@ A full-stack Examination Management System built with the MERN stack. This platf
 * **Database:** MongoDB (Mongoose)
 * **Authentication:** JSON Web Tokens (JWT)
 
-## 🧩 Technical Highlight: Solving Data Mismatch
-During development, I encountered a challenge where results were defaulting to "Fail" due to data type and key mapping mismatches. I implemented a normalization layer in the backend to ensure frontend input keys ("option1") were correctly mapped to database answer keys ("A") and used string trimming/normalization to handle unexpected whitespace or case sensitivity.
 
 ## 📸 Screenshots
 
